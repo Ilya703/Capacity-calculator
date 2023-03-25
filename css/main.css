@@ -1,0 +1,104 @@
+body {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+}
+div, p, input, button, form, span, a, ul, li {
+    margin: 0;
+    box-sizing: border-box;
+} 
+
+.slider__container{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 300px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 60px;
+}
+.flex__box{
+    display: flex;
+    justify-content: space-between;
+}
+.line__light{
+    background: hsla(0, 0%, 14%, 1);;
+    height: 2px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.yellow__line {
+    background: #f7b70b;
+    height: 2px;
+    width: 60px;
+    margin-top: 10px;
+    margin-left: 34px;
+}
+.text__block{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: hsla(0, 0%, 14%, 1);;
+}
+.price__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.price__box div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.price {
+    cursor: pointer;
+    margin-left: 50px;
+}
+.slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 300px;
+    height: 6px;
+    background: #f7b70b;
+    border-radius: 20px;
+    display: block;
+    outline: none;
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: hsl(43.73, 94%, 41%);
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.slider::-moz-range-thumb{
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: hsl(43.73, 94%, 41%);
+    border-radius: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 780px){
+    .slider__container{
+        display: block;
+    }
+}
