@@ -15,7 +15,7 @@ div, p, input, button, form, span, a, ul, li {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 300px;
+    width: 400px;
     font-family: 'Roboto', sans-serif;
     margin-top: 60px;
 }
@@ -34,8 +34,8 @@ div, p, input, button, form, span, a, ul, li {
     background: #f7b70b;
     height: 2px;
     width: 60px;
-    margin-top: 10px;
-    margin-left: 34px;
+    margin-top: 4px;
+    margin-left: 8px;
 }
 .text__block{
     font-family: Roboto;
@@ -45,27 +45,33 @@ div, p, input, button, form, span, a, ul, li {
     line-height: 21px;
     color: hsla(0, 0%, 14%, 1);;
 }
+.cost__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 190px;
+    margin-top: 40px;
+}
 .price__box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 200px;
-    margin: 0 auto;
+    width: 150px;
     margin-top: 40px;
 }
-.price__box div {
+.price__box div, .cost__box div {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
 }
-.price {
+.price, .cost {
     cursor: pointer;
-    margin-left: 50px;
+    margin: 0 auto;
 }
 .slider {
     -webkit-appearance: none;
     appearance: none;
-    width: 300px;
+    width: 400px;
     height: 6px;
     background: #f7b70b;
     border-radius: 20px;
@@ -97,8 +103,27 @@ div, p, input, button, form, span, a, ul, li {
     cursor: pointer;
 }
 
-@media screen and (max-width: 780px){
-    .slider__container{
-        display: block;
+.prices__block {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+}
+
+@media screen and (max-width: 500px){
+    .slider__container, .slider {
+        width: 300px;
+    }
+
+    .prices__block {
+        flex-direction: column;
+        width: 300px;
+    }
+
+    .price__box{
+        margin: 30px auto;
+    }
+
+    .cost__box {
+        margin: 20px auto;
     }
 }
