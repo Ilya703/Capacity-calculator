@@ -22,7 +22,7 @@ const range = (e) => {
 
     amount.textContent = `${val} кВт`;
     price.textContent = priceValue;
-    cost.textContent = Math.round(parseFloat(priceValue) * val * 24 * 365 / 12);
+    cost.textContent = (Math.round(parseFloat(priceValue) * val * 24 * 365 / 12)).toLocaleString('ru');
 };
 
 slider.addEventListener('input', (e) => range(e));
