@@ -22,7 +22,7 @@ const range = (e) => {
 
     amount.textContent = `${val} кВт`;
     price.textContent = priceValue;
-    cost.textContent = Math.round(parseFloat(priceValue) * val);
+    cost.textContent = Math.round(parseFloat(priceValue) * val * 24 * 365 / 12);
 };
 
 slider.addEventListener('input', (e) => range(e));

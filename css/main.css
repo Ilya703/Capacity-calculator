@@ -15,7 +15,7 @@ div, p, input, button, form, span, a, ul, li {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    width: 400px;
+    width: 600px;
     font-family: 'Roboto', sans-serif;
     margin-top: 60px;
 }
@@ -33,9 +33,7 @@ div, p, input, button, form, span, a, ul, li {
 .yellow__line {
     background: #f7b70b;
     height: 2px;
-    width: 60px;
     margin-top: 4px;
-    margin-left: 8px;
 }
 .text__block{
     font-family: Roboto;
@@ -43,26 +41,26 @@ div, p, input, button, form, span, a, ul, li {
     font-weight: bold;
     font-size: 18px;
     line-height: 21px;
-    color: hsla(0, 0%, 14%, 1);;
+    color: hsla(0, 0%, 14%, 1);
+    text-align: center;
 }
-.cost__box {
+.cost__box, .price__box {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 190px;
     margin-top: 40px;
 }
-.price__box {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 150px;
-    margin-top: 40px;
-}
-.price__box div, .cost__box div {
+.price__box div {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    width: 46px;
+}
+.cost__box div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100px;
 }
 .price, .cost {
     cursor: pointer;
@@ -71,7 +69,7 @@ div, p, input, button, form, span, a, ul, li {
 .slider {
     -webkit-appearance: none;
     appearance: none;
-    width: 400px;
+    width: 600px;
     height: 6px;
     background: #f7b70b;
     border-radius: 20px;
@@ -106,10 +104,14 @@ div, p, input, button, form, span, a, ul, li {
 .prices__block {
     display: flex;
     justify-content: space-between;
-    width: 400px;
+    width: 600px;
 }
 
-@media screen and (max-width: 500px){
+.value__box {
+    margin: 0 20px;
+}
+
+@media screen and (max-width: 640px){
     .slider__container, .slider {
         width: 300px;
     }
@@ -119,11 +121,7 @@ div, p, input, button, form, span, a, ul, li {
         width: 300px;
     }
 
-    .price__box{
-        margin: 30px auto;
-    }
-
-    .cost__box {
-        margin: 20px auto;
+    .price__box .value__box {
+        margin-left: 70px;
     }
 }
